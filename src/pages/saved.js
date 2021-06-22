@@ -12,13 +12,14 @@ class Saved extends Component {
         .catch(err => console.error(err));
     }
 
-    render () {
-        return (
-            <div className="container">
-                <h2> Saved books </h2>
-                <Results books={this.state.savedBooks}/>
-            </div>
-        )
-    }
+render () {
+    return (
+        <div>
+            <h2 className="text-center"> Saved Books</h2>
+            <Results books={this.state.savedBooks} />
+        </div>
+    )
+}
+
 }
 export default Saved;
