@@ -5,14 +5,13 @@ class Results extends Component {
 
     state = {
         savedBooks: [],
-    }
+    };
 
     componentDidMount() {
         API.savedBooks()
-            .then(savedBooks => this.setState({ savedBooks: savedBooks }))
-            .catch(err => console.error(err));
-    }
-
+          .then((savedBooks) => this.setState({ savedBooks: savedBooks }))
+          .catch((err) => console.error(err));
+      }
     onSave = (book) => {
 
         if (this.state.savedBooks.map(book => book._id).includes(book._id)) {
