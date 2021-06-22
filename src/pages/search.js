@@ -1,7 +1,7 @@
-import React from "react";
-import Form from "../../components/form";
-import Results from "../../components/results";
-import API from "../../utilis/API";
+import React, { Component } from "react";
+import Form from "../components/form"
+import Results from "../components/results"
+import API from "../utilis/API"
 
 class Search extends React.Component {
     state = {
@@ -43,21 +43,22 @@ class Search extends React.Component {
         this.searchBook(this.state.search);
     };
 
-    render (){
+    render() {
         return (
-            <div>
-                <Form
-                search={this.state.search}
-                handleInputChange={this.handleInputChange}
-                handleFormSubmit={this.handleFormSubmit}
-                />
-                <div className="container">
-                    <h2>Results</h2>
-                    <Results books={this.state.books} />
-                </div>
-            </div>
-        )
-    }
+          <div>
+            <h1 className="text-center">Search Books!</h1>
+            <p className="text-center">Use the search bar to look for various book titles.  Click view to find out more about the book.  Click save to add that book to your list of unread books.</p>
+            <Form
+              handleFormSubmit={this.handleFormSubmit}
+              handleInputChange={this.handleInputChange}
+              search={this.state.search}
+            />
+            <Results
+              books={this.state.books}
+            ></Results>
+          </div>
+        );
+      }
 }
 
 export default Search;
