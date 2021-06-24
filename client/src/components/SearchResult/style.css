@@ -1,0 +1,28 @@
+.save {
+  background-color: lightskyblue;
+  color: lightpink
+}
+
+.save:hover
+{
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.view {
+  background-color: lightskyblue;
+  color: lightpink
+}
+
+.view:hover
+{
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkblue;
+  margin-bottom: 330rem;
+}
