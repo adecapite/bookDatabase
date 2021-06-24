@@ -1,23 +1,23 @@
 .save {
-  background-color: lightskyblue;
-  color: lightpink
+  background-color: lightpink;
+  color: black
 }
 
 .save:hover
 {
   background-color: lightblue;
-  color: darkblue;
+  color: black;
 }
 
 .view {
-  background-color: lightskyblue;
-  color: lightpink
+  background-color: lightpink;
+  color: black
 }
 
 .view:hover
 {
   background-color: lightblue;
-  color: darkblue;
+  color: black;
 }
 
 .card {
